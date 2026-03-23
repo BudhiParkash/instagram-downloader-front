@@ -1,0 +1,4 @@
+# Target modern browsers (ES modules).
+# This reduces legacy transforms/polyfills in production bundles.
+supports es6-module
+

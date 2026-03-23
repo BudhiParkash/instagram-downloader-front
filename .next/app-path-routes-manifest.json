@@ -1,0 +1,9 @@
+{
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/_not-found/page": "/_not-found",
+  "/page": "/",
+  "/[lang]/page": "/[lang]",
+  "/[lang]/[type]/page": "/[lang]/[type]",
+  "/twitter-image/route": "/twitter-image",
+  "/opengraph-image/route": "/opengraph-image"
+}
