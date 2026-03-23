@@ -64,7 +64,7 @@ export default function DownloaderBox({ lang = "en", type = "reels", copy }){
     try {
 
       const res = await fetch(
-        "http://192.168.1.11:5002/api/preview?url=" +
+        "http://16.16.169.131/api/preview?url=" +
         encodeURIComponent(link)
       );
 
@@ -99,7 +99,7 @@ export default function DownloaderBox({ lang = "en", type = "reels", copy }){
 
   const download = () => {
     window.location.href =
-      "http://192.168.1.11:5002/api/download?url=" +
+      "http://16.16.169.131/api/download?url=" +
       encodeURIComponent(link);
   };
 
@@ -231,7 +231,7 @@ export default function DownloaderBox({ lang = "en", type = "reels", copy }){
                 />
               ) : (
                 <img
-                  src={`http://192.168.1.11:5002/api/image-proxy?url=${encodeURIComponent(m.url)}`}
+                  src={`http://16.16.169.131/api/image-proxy?url=${encodeURIComponent(m.url)}`}
                   alt={copy?.downloader?.previewAlt || "Instagram media preview"}
                   loading="lazy"
                   decoding="async"
